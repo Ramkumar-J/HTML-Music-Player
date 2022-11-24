@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.music-player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darksalmon;
+}
+.song-card{
+    background-color: rgba(78, 230, 154, 0.815);
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px black;
+}
+.song-poster{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.song-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: spinn;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spinn{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.song-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.song-artists{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.song-name{
+    font-size: 24px;
+}
+.singers{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.song-icon{
+    padding-right: 30px;
+    margin-top: 30px;
+}
+.music-icon{
+    font-size: 30px;
+}
+.song-control{
+    background-color: #f1f3f4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
